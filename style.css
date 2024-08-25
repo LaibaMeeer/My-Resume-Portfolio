@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1ABC9C, #16A085);
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+  position: relative;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+header nav ul li {
+  margin: 0 1.5em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f1c40f;
+}
+
+header h1 {
+  margin: 0.5em 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 2em;
+  margin: 1.5em auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+}
+
+section h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #1ABC9C;
+  padding-bottom: 0.5em;
+}
+
+.project {
+  margin-bottom: 1.5em;
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project ul li {
+  margin-bottom: 0.5em;
+  padding: 0.75em;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.project ul li:hover {
+  background-color: #f1c40f;
+  color: white;
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #1ABC9C;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 0.5em 0;
+  }
+
+  section {
+    margin: 0.5em;
+    padding: 1.5em;
+  }
+}
